@@ -5,16 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Uglem consulting</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
-        <img src="assets/logo white.png" alt="logotype" title="uglem consulting">
+        <img class="logotype-header" src="assets/logo white.png" alt="logotype" title="uglem consulting">
         <nav class="navigation">
             <ul class="nav-list">
-                <li><a href="">what-we-do</a></li>
-                <li><a href="">previous-projects</a></li>
-                <li><a href="">how-it-works</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#what-we-do">WHAT WE DO</a></li>
+                <li><a href="#previous-projekts">PREVIOUS PROJEKTS</a></li>
+                <li><a href="#how-it-works">HOW IT WORKS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -22,20 +23,22 @@
         <section id="what-we-do">
             <article class="what-we-do-text">
                 <h3>WHAT WE DO</h3>
-                <p>
-                    Grapich profile, logotypes, print material, website design
-                    Grapich profile, logotypes, print material, website design
+                <p>Grapich profile, logotypes, print material, website designGrapich profile, 
+                    logotypes, print material, website design
                 </p>
             </article>
             <div class="services">
-                <img src="assets/Logotypes.jpg" alt="logotype" title="fjällfixarn" height="300px">
-                <img src="assets/dator.jpg" alt="website" title="website" height="300px">
-                <img src="assets/Prints.jpg" alt="prints" title="prints" height="300px">
+                <img class="services-image" src="assets/Logotypes.jpg" alt="logotype" title="logotypes" height="200px">
+                <img class="services-image" src="assets/dator.jpg" alt="website" title="website" height="200px">
+                <img class="services-image" src="assets/Prints.jpg" alt="prints" title="prints" height="200px">
             </div>
         </section>
-        <section class="previous-projekts">
+
+        <section id="previous-projekts">
             <article class="previous-projekts-text">
                 <h3>PREVIOUS PROJEKTS</h3>
+                <p>We have collaborated with several different companies in different industries.<br>
+                    Below you see a selection of these</p>
             </article>
             <div class="row-logotype-1">
                 <img src="assets/kam logga.png" alt="kam" title="frisör makeup" height="200px">
@@ -48,47 +51,60 @@
                 <img src="assets/mannes logga.png" alt="Mannes skinn och ben" title="Mannes skinn och ben" height="200px">
             </div>
         </section>
-        <section class="how-it-works">
-            <h3>HOW IT WORKS</h3>
-            <article class="step-one">
-                <img src="" alt="">
-                <h4>Your company</h4>
-                <p>We take part in your company's main industries and values..</p>
+
+        <section id="how-it-works">
+            <article class="how-it-works-text">
+                <h3>HOW IT WORKS</h3>
+                <p>From your first contact to finished product</p>
             </article>
-            <article class="step-two">
-                <img src="" alt="">
-                <h4>Graphic draft</h4>
-                <p>We present a graphic profile based on your business idea which can be modified until you feel satisfied </p>
-            </article>
-            <article class="step-three">
-                <img src="" alt="">
-                <h4>Finished product</h4>
-                <p>Your company has a clear graphic profile with associated logo, website and print products.</p>
-            </article>
+            <div class="steps-container">
+                <article class="step">
+                    <h4>YOUR COMPANY</h4>
+                    <p>We take part in your company's main industries and values</p>
+                </article>
+                <article class="step">
+                    <h4>GRAPHIC DRAFT</h4>
+                    <p>We present a graphic profile based on your business idea which can be modified until you are satisfied </p>
+                </article>
+                <article class="step">
+                    <h4>FINISHED PRODUCT</h4>
+                    <p>Your company has a suitable graphic profile with associated logo, website and print products</p>
+                </article>
+            </div>
         </section>
-        <section class="contact">
+
+        <section id="contact">
             <article class="contact-text">
-                <h3>CONTACT US</h3>
-                <p>feel free to contact us by phone or email, we look forward to collaborate with you!</p>
+                <h3>CONTACT</h3>
+                <p>Feel free to contact us by phone or email, <br>we look forward to collaborate with you!</p>
             </article>
-            <article class="phone">
-                <h4>Call us <br> +4670 309 52 56</h4>
-            </article>
-            <article class="email">
-                <h4>Send an email <br> info@uglem.se</h4>
-            </article>
-            <article class="adress">
-                <h4>Visit us <br> Säterberget Rise 305 <br> 846 91 Hede</h4>
-            </article>
+            <div class="contact-info">
+                <article class="phone">
+                    <h4>CALL US</h4>
+                    <p><a href="tel:+4670 309 52 56">+4670 309 52 56</a></p>
+                </article>
+                <article class="email">
+                    <h4>SEND AN EMAIL</h4>
+                    <address>info@uglem.se</address>
+                </article>
+                <img src="assets/letter.png" alt="letter" title="letter">
+                <article class="adress">
+                    <h4>VISIT US</h4>
+                    <address>Säterberget Rise 305 <br> 846 91 Hede</address>
+                </article>
+            </div>
         </section>        
     </main>
+
     <footer>
-        <img src="assets/logo white.png" alt="logotype" title="uglem consulting">
-        <article class="footer-contact">
-            <h4>+4670 309 52 56</h4>
-            <h4>info@uglem.se</h4>
-            <h4>Säterberget Rise 305<br>846 91 Hede</h4>
-        </article>
+        <div class="footer">
+            <img src="assets/logo white.png" alt="logotype" title="uglem consulting" width="300px" height="193px">
+            <article class="footer-contact">
+                <p>+4670 309 52 56<br>
+                info@uglem.se<br>
+                Säterberget Rise 305<br>846 91 Hede</p>
+            </article>
+        </div>
     </footer>
 
     
